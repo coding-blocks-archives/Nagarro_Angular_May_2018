@@ -1,0 +1,13 @@
+<app-todo [todo]="todoList" (result)="update($event)"></app-todo>
+<ul>
+  <li *ngFor="let x of todoList; let y = index">
+    {{x}}
+  </li>
+</ul>
+
+<!--// To declare and assign an array inside the Parent Component-->
+<!--// Call the child Component from the parent component-->
+<!--// Property Bind by using [] the childcomponent with the property -->
+<!--of parent-->
+<!--//Access the property inside child using @Input Decorator-->
+<!--// Bind that array with *ngFor inside the Child Component-->
