@@ -1,0 +1,11 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<input type="text" #title>
+<input type="text" #author>
+<button (click)="send(title.value, author.value)">Send</button>
+<input type="text" placeholder="update" #upd>
+<div *ngFor="let i of authorList; let y = index">
+  <span>{{i.title}}</span> &nbsp;
+  <span appColor>{{i.author}}</span>
+  <button (click)="update(upd.value, y)">Update</button>
+</div>
+
